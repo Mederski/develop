@@ -1,0 +1,66 @@
+.hr {
+    @include pading_bottom-background (#EBAFAF, 260px, 84px);
+
+    &__top {
+        @include align-items-center(center);
+
+        &--actual {
+            @include fonts(400, 12px, #FFFFFF, #323232, 25px, 5px 10px, 13px);
+            text-shadow: 25px, 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &--name {
+            @include font(400, 12px, #699B9a, 0);
+        }
+        &--invis {
+            @include fonts (400,12px,#ffffff,#ffffff,25px,5px 10px, 13px)
+        }
+    }
+
+    &__title {
+        @include font(400, 22px, #182120, 7px);
+
+    }
+
+    &__tags {
+        @include center(center, center);
+        display: flex;
+        flex-wrap: wrap;
+
+        &--tag {
+            @include center (center, center);
+            @include width-height(60px, 21px);
+            @include fonts(400, 12px, #699999, #C4C4C4, 5px, 4px 5px, 25px);
+        }
+    }
+
+
+    &__conditions {
+        @include font(400, 12px, #B6B6B6, 17px);
+        display: flex;
+        flex-wrap: wrap;
+
+        &--condition {
+            margin-right: 22px;
+        }
+    }
+
+    &__avatar {
+        @include avatar(black, 100%, 100px, 100px);
+
+    }
+
+    &__item {
+        @include hr__item (space-between, #FFFFFF, 25px 35px, 40px, wrap);
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__details {
+        margin: 0 0 0 26px;
+    }
+
+}

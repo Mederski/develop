@@ -1,0 +1,68 @@
+@mixin fonts ($meder, $nurs, $zarina, $aza, $aika, $seytek, $med ) {
+    font-weight: $meder ;
+    font-size: $nurs ;
+    color: $zarina ;
+    background: $aza;
+    border-radius: $aika;
+    padding: $seytek;
+    margin-left: $med;
+}
+
+@mixin font ($meder, $nurs, $zarina) {
+    display: flex;
+    font-weight: $meder ;
+    font-size: $nurs ;
+    color: $zarina ;
+}
+
+@mixin font ($meder, $nurs, $zarina,$med) {
+    display: flex;
+    font-weight: $meder ;
+    font-size: $nurs ;
+    color: $zarina ;
+    margin-top: $med;
+}
+
+@mixin center ($danyar, $zarina) {
+    display: flex;
+    align-items: $danyar;
+    justify-content: $zarina;
+}
+
+@mixin align-items-center ($meder) {
+    display: flex;
+    align-items: $meder;
+}
+
+@mixin pading_bottom-background ($med, $der, $dan) {
+    background: $med;
+    padding-bottom: $der;
+    padding-top: $dan;
+}
+
+@mixin hr__item($med, $der, $dan, $yar,$tim) {
+    display: flex;
+    justify-content: $med;
+    background: $der;
+    padding: $dan;
+    margin-top: $yar;
+    flex-wrap: $tim;            
+}
+
+@mixin avatar ($med, $der, $dan, $yar) {
+    background: $med;
+    border-radius: $der;
+    height: $dan;
+    width: $yar;
+}
+@mixin width-height ($med,$der) {
+    width: $med;
+    height: $der;    
+}
+
+@mixin Adaptive ($med,$der,$dan,) {
+    justify-content: $med;
+    max-width: $der;
+    margin: $dan;
+    
+}
